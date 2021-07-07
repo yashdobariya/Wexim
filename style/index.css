@@ -4,6 +4,126 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+@font-face {
+  font-family: myfonts;
+  src: url("../fonts/Poppins-Regular.ttf");
 }
+
+body {
+  font-family: myfonts;
+}
+
+.dashbord-section {
+  min-height: 100vh;
+  height: auto;
+  background-image: url("../images/bg-img5.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 125px;
+}
+.header-img img {
+  padding: 20px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header ul li {
+  padding: 30px;
+}
+
+.menu-btn i {
+  padding: 30px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.pulse-effect-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 30px 300px 100px 300px;
+}
+
+.pulse-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  line-height: 70px;
+  display: inline-block;
+  text-align: center;
+  background-color: #00bcd4;
+  position: relative;
+  z-index: 1;
+  animation: zoom 0.5s infinite;
+}
+.pulse-btn i {
+  color: white;
+}
+
+@keyframes zoom {
+  0% {
+    box-shadow: 0px 0px 0 5px rgba(255, 255, 255, 0.9);
+  }
+  25% {
+    box-shadow: 0px 0px 0 10px rgba(255, 255, 255, 0.6);
+  }
+  70% {
+    box-shadow: 0px 0px 0 15px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0px 0px 0 20px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.pulse-effect-section h1 {
+  margin-top: 30px;
+  font-size: 55px;
+}
+
+.pulse-effect-section p {
+  margin-top: 20px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.btn-sec {
+  margin-top: 20px;
+}
+
+.btn-sec-1 {
+  padding: 15px 35px;
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-sec-2 {
+  padding: 15px 35px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 600;
+  margin: 10px;
+  border: 1px solid white;
+}
+
+/*  side menu section */
