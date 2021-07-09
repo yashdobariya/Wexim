@@ -14,6 +14,14 @@
     padding: 20px;
     font-size: 25px;
   }
+  .creative-main {
+    padding: 20px;
+  }
+
+  .creative-con {
+    text-align: center;
+    padding: 30px 50px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 995px) {
@@ -67,6 +75,20 @@
   .service-card {
     margin-top: 50px;
   }
+  .creative-main {
+    padding: 20px;
+  }
+
+  .creative-con {
+    text-align: center;
+    padding: 30px 0px;
+  }
+  .card-sec-one {
+    display: none;
+  }
+  .card-sec-two {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1285px) {
@@ -78,5 +100,35 @@
 @media (min-width: 995px) and (max-width: 1200px) {
   .brand-contant {
     padding: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+  .head-card {
+    flex-direction: column;
+  }
+  .card-img {
+    width: 100%;
+  }
+  .card-contant {
+    width: 100%;
+    order: 2;
+  }
+  .creative-con h1 {
+    font-size: 40px;
+  }
+  .content-overlay {
+    height: 50%;
+    width: 100%;
+  }
+  .content-overlay2 {
+    height: 50%;
+    width: 100%;
+  }
+  .head-card:hover .content-overlay {
+    bottom: 0;
+  }
+  .head-card:hover .content-overlay2 {
+    bottom: 0;
   }
 }

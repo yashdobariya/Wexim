@@ -219,8 +219,6 @@ body {
 }
 
 .progress-bar-sec {
-  /* min-height: 200px;
-  height: auto; */
   margin-top: 30px;
 }
 
@@ -288,8 +286,6 @@ body {
   font-size: 16px;
 }
 .about-contant h1 {
-  /* color: linear-gradient(to right, #3264f5 2%, #7202bb 82%); */
-
   color: #3264f5;
   font-size: 50px;
 }
@@ -297,8 +293,6 @@ body {
 .services-card-sec {
   display: flex;
   margin-top: 100px;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .service-card {
@@ -322,7 +316,6 @@ body {
   background-attachment: fixed;
   height: 500px;
   color: white;
-  margin-bottom: 200px;
 }
 
 .digital-service {
@@ -351,4 +344,201 @@ body {
   font-weight: 600;
   max-width: 200px;
   margin-top: 20px;
+}
+
+.creative-head-section {
+  width: 100%;
+}
+
+.creative-main {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+
+.creative-con {
+  text-align: center;
+  padding: 50px 150px;
+}
+.creative-con h6 {
+  font-size: 16px;
+  opacity: 0.8;
+}
+.creative-con h1 {
+  color: #3264f5;
+  font-size: 50px;
+}
+.creative-con p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.creative-head-cards-sec {
+  width: 100%;
+}
+
+.cards-sec {
+  width: 100%;
+  display: flex;
+}
+
+.card-sec-one {
+  width: 50%;
+}
+
+.head-card {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.card-img {
+  width: 50%;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.head-card:hover .card-contant {
+  color: white;
+}
+
+.head-card:hover .sub-title {
+  color: white;
+}
+
+.head-card:hover .content-overlay {
+  right: 0;
+}
+
+.head-card:hover .content-overlay2 {
+  left: 0;
+}
+
+.head-card:hover .card-img img {
+  transform: scale(1.1);
+}
+
+.content-overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background-color: #7202bb;
+  transition: all 0.3s linear;
+}
+
+.content-overlay2 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  z-index: -1;
+  background-color: #7202bb;
+  transition: all 0.3s linear;
+}
+
+.card-contant {
+  width: 50%;
+  padding: 20px;
+}
+
+.card-contant p {
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+.card-social-icon {
+  margin-top: 30px;
+}
+
+.card-social-icon span {
+  padding: 10px;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.sub-title {
+  color: #3264f5;
+}
+
+.card-sec-two {
+  width: 50%;
+}
+
+.creative-portfolio-section {
+  background-color: #f8f9fa;
+  width: 100%;
+  margin-top: 100px;
+  height: auto;
+  min-height: 1300px;
+  margin-bottom: 200px;
+}
+
+.portfolio-work-sec {
+  width: 50%;
+}
+
+.creative-portfolio-contant-sec {
+  width: 50%;
+}
+
+.portfolio-sec {
+  display: flex;
+  padding: 0px 100px;
+}
+
+.portfolio-work-wrap {
+  margin: 20px;
+}
+.img-overflow {
+  margin-top: -130px !important;
+}
+
+.work-contant {
+  display: flex;
+  margin-top: 50px;
+  /* justify-content: center; */
+}
+
+.project-cont {
+  /* padding: 50px; */
+}
+
+.project-cont p {
+  font-size: 14px;
+}
+.project-cont h1 {
+  font-size: 60px;
+  color: #7202bb;
+  margin-left: 10px;
+}
+
+.btn-wrap {
+  padding: 50px 40px;
+}
+.btn-wrap button {
+  padding: 12px 35px;
+  background-color: #7202bb;
+  color: white;
+  border: none;
+  font-weight: 500;
+}
+
+.img-wrap {
+  background-color: white;
+  margin-top: 40px;
+}
+
+.img-wrap img {
+  width: 100%;
+  padding: 20px;
+}
+
+.portfolio-contant {
+  text-align: center;
+  padding: 30px;
 }
