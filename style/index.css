@@ -286,8 +286,13 @@ body {
   font-size: 16px;
 }
 .about-contant h1 {
-  color: #3264f5;
   font-size: 50px;
+}
+
+.text-color {
+  background: linear-gradient(to right, #3264f5 18%, #7202bb 82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .services-card-sec {
@@ -299,8 +304,9 @@ body {
   text-align: center;
 }
 .service-card h1 {
-  color: #7202bb;
+  font-size: 40px;
 }
+
 .service-card h6 {
   margin-top: 20px;
   font-size: 16px;
@@ -365,7 +371,6 @@ body {
   opacity: 0.8;
 }
 .creative-con h1 {
-  color: #3264f5;
   font-size: 50px;
 }
 .creative-con p {
@@ -402,12 +407,35 @@ body {
   height: 100%;
 }
 
+.content-overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  /* right: 50%; */
+  z-index: -1;
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+  transition: all 0.3s linear;
+}
+
+.content-overlay2 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  /* left: 50%; */
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+  transition: all 0.5s linear;
+}
+
 .head-card:hover .card-contant {
   color: white;
 }
 
-.head-card:hover .sub-title {
-  color: white;
+.head-card:hover .text-color {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .head-card:hover .content-overlay {
@@ -420,25 +448,6 @@ body {
 
 .head-card:hover .card-img img {
   transform: scale(1.1);
-}
-
-.content-overlay {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  z-index: -1;
-  background-color: #7202bb;
-  transition: all 0.3s linear;
-}
-
-.content-overlay2 {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  right: 0;
-  z-index: -1;
-  background-color: #7202bb;
-  transition: all 0.3s linear;
 }
 
 .card-contant {
@@ -459,10 +468,6 @@ body {
   padding: 10px;
   font-size: 20px;
   opacity: 0.6;
-}
-
-.sub-title {
-  color: #3264f5;
 }
 
 .card-sec-two {
@@ -494,43 +499,43 @@ body {
 .portfolio-work-wrap {
   margin: 20px;
 }
+
 .img-overflow {
-  margin-top: -130px !important;
+  margin-top: -100px !important;
 }
 
 .work-contant {
   display: flex;
   margin-top: 50px;
-  /* justify-content: center; */
-}
-
-.project-cont {
-  /* padding: 50px; */
 }
 
 .project-cont p {
-  font-size: 14px;
+  font-size: 15px;
 }
 .project-cont h1 {
-  font-size: 60px;
-  color: #7202bb;
+  font-size: 70px;
+  color: #00bcd4;
   margin-left: 10px;
 }
 
 .btn-wrap {
   padding: 50px 40px;
 }
+
 .btn-wrap button {
   padding: 12px 35px;
-  background-color: #7202bb;
+  background: linear-gradient(to right, #3264f5 18%, #7202bb 82%);
   color: white;
   border: none;
   font-weight: 500;
 }
 
 .img-wrap {
+  position: relative;
   background-color: white;
   margin-top: 40px;
+  width: 500px;
+  height: 534px;
 }
 
 .img-wrap img {
@@ -538,7 +543,228 @@ body {
   padding: 20px;
 }
 
+.portfolio-card-overlay {
+  position: absolute;
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  color: white;
+  font-size: 16px;
+  z-index: 1;
+  opacity: 0.8;
+  font-weight: 0;
+
+  height: 534px;
+  visibility: hidden;
+  transition: all 0.5s linear;
+}
+.portfolio-card-overlay span {
+  font-size: 100px;
+}
+
+.img-wrap:hover .portfolio-card-overlay {
+  visibility: visible;
+}
+
 .portfolio-contant {
   text-align: center;
   padding: 30px;
+}
+
+.portfolio-contant h6 {
+  font-size: 18px;
+  color: #00bcd4;
+}
+
+.portfolio-contant h1 {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.portfolio-contant p {
+  margin-top: 10px;
+}
+
+.img-overflow2 {
+  margin-bottom: -140px;
+}
+
+.pricing-sec {
+  padding: 100px;
+}
+
+.pricing-heading {
+  padding: 0px 200px;
+  text-align: center;
+}
+.pricing-heading h6 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.pricing-heading h1 {
+  font-size: 50px;
+}
+.pricing-heading p {
+  margin-top: 10px;
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.pricing-plan-sec {
+  margin-top: 100px;
+  display: flex;
+}
+
+.starter-plan-section {
+  width: 50%;
+  background-color: #e9edf0;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.business-plan-section {
+  width: 50%;
+  background-color: #e9edf0;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.business-plan-section:hover {
+  width: 50%;
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+  color: white;
+}
+
+.starter-plan-section:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.starter-plan-section:hover .prc-btn-wrp button {
+  background-color: white;
+  color: black;
+}
+
+.starter-plan-contant {
+  padding: 80px;
+}
+.starter-plan-contant h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.starter-plan-contant p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.starter-plan-contant h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #00bcd4;
+  margin-top: 20px;
+}
+.starter-plan-contant ul {
+  list-style: none;
+}
+
+.starter-plan-contant ul li {
+  padding-top: 20px;
+}
+
+.starter-plan-contant ul li i {
+  padding-right: 20px;
+}
+
+.prc-btn-wrp {
+  margin-top: 30px;
+}
+.prc-btn-wrp button {
+  padding: 15px 40px;
+  color: white;
+  background: #00bcd4;
+  border: none;
+  font-size: 16px;
+}
+
+.prc-btn-wrp button:hover {
+  background: #00bcd4 !important;
+  border: 2px solid white;
+}
+
+.business-plan-contant {
+  padding: 80px;
+}
+
+.business-plan-contant h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.business-plan-contant p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.business-plan-contant h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #00bcd4;
+  margin-top: 20px;
+}
+.business-plan-contant ul {
+  list-style: none;
+}
+
+.business-plan-contant ul li {
+  padding-top: 20px;
+}
+
+.business-plan-contant ul li i {
+  padding-right: 20px;
+}
+
+.prc-btn-wrp-b {
+  margin-top: 30px;
+}
+
+.business-plan-section:hover .prc-btn-wrp-b button {
+  background: white;
+  color: black;
+}
+
+.prc-btn-wrp-b button {
+  padding: 15px 40px;
+  color: white;
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+  border: none;
+  font-size: 16px;
+}
+
+.prc-btn-wrp-b button:hover {
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%) !important;
+  border: 2px solid white;
+}
+.statistics-section {
+  display: flex;
+}
+
+.statistic-one {
+  width: 50%;
+  height: auto;
+  min-height: 500px;
+}
+
+.statistic-two {
+  width: 50%;
+  height: auto;
+  min-height: 500px;
+}
+
+.statistic-contant {
+  text-align: center;
 }
