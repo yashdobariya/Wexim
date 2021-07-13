@@ -290,7 +290,7 @@ body {
 }
 
 .text-color {
-  background: linear-gradient(to right, #3264f5 18%, #7202bb 82%);
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -633,13 +633,7 @@ body {
 }
 
 .business-plan-section:hover {
-  width: 50%;
   background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
-  color: white;
-}
-
-.starter-plan-section:hover {
-  background-color: #00bcd4;
   color: white;
 }
 
@@ -661,12 +655,19 @@ body {
   margin-top: 10px;
 }
 
-.starter-plan-contant h2 {
+.starter-heading {
   font-size: 40px;
   font-weight: 300;
   color: #00bcd4;
   margin-top: 20px;
 }
+
+.starter-plan-contant h2 span {
+  font-size: 20px;
+  bottom: 20;
+  color: black;
+}
+
 .starter-plan-contant ul {
   list-style: none;
 }
@@ -679,9 +680,23 @@ body {
   padding-right: 20px;
 }
 
+.starter-plan-section:hover {
+  background-color: #00bcd4;
+  color: white !important;
+}
+
+.starter-plan-section:hover .starter-heading {
+  color: white !important;
+}
+
+.starter-plan-section:hover span {
+  color: white;
+}
+
 .prc-btn-wrp {
   margin-top: 30px;
 }
+
 .prc-btn-wrp button {
   padding: 15px 40px;
   color: white;
@@ -710,12 +725,22 @@ body {
   margin-top: 10px;
 }
 
-.business-plan-contant h2 {
+.business-heading {
   font-size: 40px;
   font-weight: 300;
-  color: #00bcd4;
   margin-top: 20px;
 }
+
+.business-plan-section:hover .business-heading {
+  color: white;
+}
+
+.business-plan-contant h2 span {
+  font-size: 20px;
+  bottom: 20;
+  color: black !important;
+}
+
 .business-plan-contant ul {
   list-style: none;
 }
@@ -741,7 +766,7 @@ body {
   padding: 15px 40px;
   color: white;
   background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
-  border: none;
+  border: 2px solid transparent;
   font-size: 16px;
 }
 
@@ -755,16 +780,326 @@ body {
 
 .statistic-one {
   width: 50%;
+  background-color: #e9edf0;
   height: auto;
-  min-height: 500px;
-}
-
-.statistic-two {
-  width: 50%;
-  height: auto;
-  min-height: 500px;
+  min-height: 600px;
 }
 
 .statistic-contant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  height: 600px;
+  padding: 50px;
+}
+.statistic-contant span {
+  font-size: 30px;
+}
+.statistic-contant p {
+  font-size: 15px;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+
+.sta-img-wrap {
+  margin-top: 30px;
+}
+
+.sta-img-wrap img {
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+}
+
+.statistic-contant h2 {
+  margin-top: 10px;
+  color: #00bcd4;
+}
+
+.sta-pera {
+  margin-top: 0px !important;
+}
+
+.sta-pagination {
+  margin-top: 50px;
+  padding-bottom: 80px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.statistic-two {
+  position: relative;
+  width: 50%;
+  height: auto;
+  min-height: 600px;
+  background: url("../images/bg-img1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistic-two-sec {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background: linear-gradient(to bottom right, #3264f5 2%, #7202bb 82%);
+  opacity: 0.7;
+  height: 100%;
+}
+
+.sta-contant {
+  margin-left: -150px;
+}
+
+.statistic-card1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sta-card-con {
+  text-align: left;
+  width: 200px;
+  z-index: 2;
+  color: white;
+}
+
+.statistic-card1 h1 {
+  font-size: 40px;
+}
+
+.statistic-card2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.statistic-card2 h1 {
+  font-size: 40px;
+}
+
+.mobile-app-sec {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-heading-contant {
+  text-align: center;
+  padding: 0px 200px;
+}
+
+.mobile-heading-contant h6 {
+  font-size: 16px;
+}
+
+.mobile-heading-contant h1 {
+  font-size: 50px;
+}
+
+.mobile-heading-contant p {
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+.mobile-app-design-section {
+  display: flex;
+  margin-top: 50px;
+}
+
+.mobile-theme-contant {
+  padding: 0px 30px;
+}
+
+.mobile-design {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.code-contant {
+  padding: 0px 30px;
+}
+
+.mobile-card-contant {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mobile-card-contant span {
+  font-size: 38px;
+}
+
+.mobile-card-contant h2 {
+  margin-top: 10px;
+}
+
+.mobile-card-contant p {
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+.mobile-design img {
+  position: relative;
+  width: 250px;
+  height: 500px;
+}
+
+.mobile-slide img {
+  position: absolute;
+  z-index: 1;
+  width: 210px;
+  height: 380px;
+  margin: 60px -105px;
+}
+
+.dream-sectiom {
+  display: flex;
+}
+
+.dream-sec {
+  width: 50%;
+  height: 500px;
+  background-color: #f8f9fa;
+}
+
+.dream-contant {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+}
+
+.dream-contant h6 {
+  font-size: 16px;
+  color: #00bcd4;
+}
+.dream-contant h1 {
+  font-size: 50px;
+}
+.dream-contant p {
+  font-size: 14px;
+  margin-top: 20px;
+  opacity: 0.6;
+}
+
+.dream-btn {
+  margin-top: 20px;
+}
+
+.dream-btn button {
+  padding: 15px 40px;
+  background: linear-gradient(to right, #3264f5 18%, #7202bb 82%);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dream-img-wrap {
+  height: 500px;
+  width: 50%;
+}
+.dream-img-wrap img {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-section {
+  display: flex;
+}
+
+.contact-detail-section {
+  position: relative;
+  z-index: 1;
+  background: url("../images/address-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 50%;
+  height: 600px;
+}
+
+.contact-detail-overlay {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  background: linear-gradient(to bottom right, #3264f5 2%, #7202bb 82%);
+  opacity: 0.7;
+  height: 100%;
+}
+
+.contact-detail-contant {
+  color: white;
+  text-align: center;
+  padding: 100px 50px;
+}
+.contact-detail-contant h6 {
+  font-size: 16px;
+}
+.contact-detail-contant h1 {
+  font-size: 47px;
+}
+.contact-detail-contant address {
+  margin-top: 20px;
+}
+.contact-social-icon {
+  margin-top: 20px;
+}
+.contact-social-icon span {
+  padding: 20px;
+}
+
+.contact-form-section {
+  width: 50%;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-form input {
+  width: 50%;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid #d8d9da;
+}
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+.from-btn button {
+  margin-top: 50px;
+  padding: 15px 40px;
+  background: linear-gradient(to right, #3264f5 18%, #7202bb 82%);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
 }

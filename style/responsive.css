@@ -2,11 +2,9 @@
   .header {
     padding-left: 0px;
   }
-
   .header ul li a {
     font-size: 14px;
   }
-
   .header ul li {
     padding: 20px;
   }
@@ -17,7 +15,6 @@
   .creative-main {
     padding: 20px;
   }
-
   .creative-con {
     text-align: center;
     padding: 30px 50px;
@@ -81,7 +78,6 @@
   .creative-main {
     padding: 20px;
   }
-
   .creative-con {
     text-align: center;
     padding: 30px 0px;
@@ -116,7 +112,6 @@
   .business-plan-section {
     width: 100%;
   }
-
   .pricing-heading {
     padding: 0px;
   }
@@ -138,6 +133,42 @@
     padding: 50px 20px;
     text-align: center;
   }
+  .statistics-section {
+    flex-direction: column;
+  }
+  .statistic-one {
+    width: 100%;
+  }
+  .statistic-two {
+    width: 100%;
+  }
+  .sta-contant {
+    margin-left: 77px;
+  }
+  .statistic-contant {
+    padding: 20px;
+  }
+  .mobile-heading-contant {
+    padding: 0px;
+  }
+  .mobile-app-design-section {
+    flex-direction: column;
+  }
+  .mobile-app-sec {
+    padding: 20px;
+  }
+  .dream-sectiom {
+    flex-direction: column;
+  }
+  .dream-sec {
+    width: 100%;
+  }
+  .dream-img-wrap {
+    width: 100%;
+  }
+  .dream-img-wrap img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1285px) {
@@ -155,6 +186,9 @@
   }
   .portfolio-sec {
     padding: 10px;
+  }
+  .mobile-heading-contant {
+    padding: 0px;
   }
 }
 
@@ -194,7 +228,6 @@
     width: 250px;
     height: 300px;
   }
-
   .portfolio-card-overlay {
     width: 250px;
     height: 300px;
