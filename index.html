@@ -16,27 +16,10 @@
 <body>
 
     <div class="main">
-        <!-- <div class="header">
-
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Work</a></li>
-            </ul>
-            <h1>Wexim</h1>
-            <ul>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">App</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-                <li><i class="fa fa-bars"></i></li>
-            </ul>
-        </div> -->
 
 
         <section class="dashbord-section">
-            <div class="header">
+            <div class="header" id="header">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -45,6 +28,7 @@
                 </ul>
                 <div class="header-img">
                     <img src="./images/logo-white.png">
+
                 </div>
                 <ul>
                     <li><a href="">Pricing</a></li>
@@ -56,6 +40,30 @@
                     <span onclick="openSideNav()"><i class="fa fa-bars"></i></span>
                 </div>
             </div>
+
+            <div class="header sticky-header" id="sticky-header">
+                <ul>
+                    <li><a href="" class="text--black">Home</a></li>
+                    <li><a href="" class="text--black">About</a></li>
+                    <li><a href="" class="text--black">Team</a></li>
+                    <li><a href="" class="text--black">Work</a></li>
+                </ul>
+                <div class="header-img">
+
+                    <img src="./images/logo-black.png">
+                </div>
+                <ul>
+                    <li><a href="" class="text--black">Pricing</a></li>
+                    <li><a href="" class="text--black">App</a></li>
+                    <li><a href="" class="text--black">Blog</a></li>
+                    <li><a href="" class="text--black">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <span class="text--black" onclick="openSideNav()"><i class="fa fa-bars"></i></span>
+                </div>
+            </div>
+
+
 
             <div class="pulse-effect-section">
                 <div class="pulse-effect">
@@ -100,7 +108,10 @@
 
             </div>
 
-
+            <div class="top-btn-wrap">
+                <button onclick="topFunction()" id="top" class="top-btn" title="Go to top"><i
+                        class="fa fa-chevron-up"></i></button>
+            </div>
 
         </section>
 
@@ -686,7 +697,7 @@
                         <input type="text" id="fname" name="lname" placeholder="Last Name">
                         <input type="email" id="lname" name="email" placeholder="Email">
                         <input type="phone" id="phone" name="fname" placeholder="Phone">
-                        <textarea type="text" id="comment" rows="10" name="comment" placeholder="Message"></textarea>
+                        <textarea type="text" id="comment" rows="6" name="comment" placeholder="Message"></textarea>
                     </form>
                 </div>
                 <div class="from-btn">
@@ -695,6 +706,22 @@
 
             </div>
         </section>
+
+
+        <footer class="footer">
+            <div class="footer-section">
+                <div class="footer-social-icon">
+                    <span><i class='fab fa-facebook'></i></span>
+                    <span><i class='fab fa-twitter'></i></span>
+                    <span><i class='fab fa-google-plus'></i></span>
+                    <span><i class='fab fa-linkedin'></i></span>
+                    <span><i class='fab fa-instagram'></i></span>
+                    <span><i class="fa fa-envelope-o"></i></span>
+                </div>
+                <p>© 2019 Wexim. Made With Love By Themesindustry</p>
+            </div>
+        </footer>
+
 
     </div>
 
