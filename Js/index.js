@@ -21,11 +21,10 @@ const scrollSite = () =>{
 
 if(window.scrollY >100)
    {
-     document.getElementById("sticky-header").style.display ="flex";
-     document.getElementById("header").style.display ="none";
+     document.getElementById("header").classList.add("sticky-header");
    }
    else{
-       document.getElementById("sticky-header").style.display ="none";
-     document.getElementById("header").style.display ="flex";
+      document.getElementById("header").classList.remove("sticky-header")
+    
       }
-}
+      }

@@ -33,6 +33,10 @@ body {
   width: 100%;
 }
 
+.header .header-img .lg-nav {
+  display: none;
+}
+
 .header-img {
   position: relative;
 }
@@ -59,18 +63,39 @@ body {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  /* color: black !important; */
 }
 
 .text--black {
   color: black !important;
 }
 
-.sticky-header {
+/* .sticky-header {
   display: none;
   background-color: white;
   position: fixed;
   top: 0;
   transition: all 0.5s linear;
+} */
+
+.sticky-header {
+  /* width: 100%; */
+  top: 0;
+  position: fixed;
+  background-color: white;
+  transition: all 0.5s linear;
+}
+
+.sticky-header .header-img .lg-nav {
+  display: block;
+}
+
+.sticky-header .header-img .dark-nav {
+  display: none;
+}
+
+.sticky-header ul li a {
+  color: black;
 }
 
 .pulse-effect-section {
@@ -94,6 +119,7 @@ body {
   z-index: 1;
   animation: zoom 0.5s infinite;
 }
+
 .pulse-btn i {
   color: white;
 }
@@ -384,13 +410,16 @@ body {
   text-align: center;
   padding: 50px 150px;
 }
+
 .creative-con h6 {
   font-size: 16px;
   opacity: 0.8;
 }
+
 .creative-con h1 {
   font-size: 50px;
 }
+
 .creative-con p {
   margin-top: 20px;
   font-size: 16px;
