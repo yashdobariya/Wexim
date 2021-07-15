@@ -58,6 +58,7 @@ body {
 .menu-btn i {
   padding: 30px;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .header ul li a {
@@ -216,6 +217,7 @@ body {
   text-decoration: none;
   text-align: end;
   font-size: 30px;
+  cursor: pointer;
 }
 .left-navigation {
   float: right;
