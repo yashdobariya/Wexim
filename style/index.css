@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -88,6 +89,7 @@ body {
 
 .sticky-header .header-img .lg-nav {
   display: block;
+  color: black;
 }
 
 .sticky-header .header-img .dark-nav {
@@ -95,6 +97,9 @@ body {
 }
 
 .sticky-header ul li a {
+  color: black;
+}
+.sticky-header .menu-btn i {
   color: black;
 }
 
@@ -182,7 +187,7 @@ body {
   top: 0;
   background-color: #00bcd4;
   right: 0;
-  z-index: 1;
+  z-index: 20;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -454,50 +459,8 @@ body {
   height: 100%;
 }
 
-.content-overlay {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  /* right: 50%; */
-  z-index: -1;
-  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
-  transition: all 0.3s linear;
-}
-
-.content-overlay2 {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  /* left: 50%; */
-  right: 0;
-  z-index: -1;
-  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
-  transition: all 0.5s linear;
-}
-
-.head-card:hover .card-contant {
-  color: white;
-}
-
-.head-card:hover .text-color {
-  background: white;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.head-card:hover .content-overlay {
-  right: 0;
-}
-
-.head-card:hover .content-overlay2 {
-  left: 0;
-}
-
-.head-card:hover .card-img img {
-  transform: scale(1.1);
-}
-
 .card-contant {
+  position: relative;
   width: 50%;
   padding: 20px;
 }
@@ -517,8 +480,104 @@ body {
   opacity: 0.6;
 }
 
+/* 
+.card-contant::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; */
+/* right: 50%; */
+/* z-index: -1;
+} */
+
+/* .head-card:hover .card-contant::after {
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+  transition: all 0.3s linear;
+} */
+
+/* .content-overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%; */
+/* right: 50%; */
+/* z-index: -1;
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+  transition: all 0.3s linear;
+} */
+
+/* .content-overlay2::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+} */
+
+/* 
+.head-card:hover .content-overlay2::after {
+  content: "";
+  left: 0;
+  transition: all 0.5s linear;
+} */
+
+/* .content-overlay2 {
+  position: absolute;
+  width: 50%;
+  height: 100%; */
+/* left: 50%; */
+/* right: 0;
+  z-index: -1;
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+  transition: all 0.5s linear;
+} */
+
+.head-card:hover .card-contant {
+  color: white;
+}
+
+.head-card:hover .text-color {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .head-card:hover .content-overlay {
+  right: 0;
+} */
+
+/* .head-card:hover .content-overlay2 {
+  left: 0;
+} */
+
+.head-card:hover .card-img img {
+  transform: scale(1.1);
+}
+
 .card-sec-two {
   width: 50%;
+}
+
+.head-card .card-contant::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+
+.head-card:hover .card-contant::after {
+  width: 100%;
 }
 
 .creative-portfolio-section {
@@ -1158,6 +1217,7 @@ body {
   opacity: 0.5;
   margin-left: 30px;
   border: none;
+  resize: none;
   font-size: 15px;
   border-bottom: 2px solid #d8d9da;
   outline: none;
@@ -1210,6 +1270,7 @@ body {
   z-index: 10;
   color: white;
   bottom: 20px;
+  display: none;
   right: 30px;
 }
 

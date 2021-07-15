@@ -17,14 +17,17 @@ const topFunction = () => {
 
 window.onscroll = function() {scrollSite()};
 
-const scrollSite = () =>{
+const scrollSite = () => {
 
-if(window.scrollY >100)
-   {
-     document.getElementById("header").classList.add("sticky-header");
+   if (window.scrollY > 100) {
+      document.getElementById("header").classList.add("sticky-header");
+      document.getElementById("top").style.display = "block";
+      
    }
-   else{
+   else {
       document.getElementById("header").classList.remove("sticky-header")
+      document.getElementById("top").style.display = "none";
     
-      }
-      }
+      
+   }
+}
