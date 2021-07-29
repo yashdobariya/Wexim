@@ -30,8 +30,9 @@ body {
   z-index: 5;
   display: flex;
   justify-content: space-around;
-  padding-left: 125px;
+  padding-left: 140px;
   width: 100%;
+  padding-top: 20px;
 }
 
 .header .header-img .lg-nav {
@@ -43,7 +44,7 @@ body {
 }
 
 .header-img img {
-  padding: 20px;
+  padding: 15px;
 }
 
 .header ul {
@@ -52,11 +53,11 @@ body {
 }
 
 .header ul li {
-  padding: 30px;
+  padding: 20px;
 }
 
 .menu-btn i {
-  padding: 30px;
+  padding: 20px;
   font-size: 25px;
   cursor: pointer;
 }
@@ -64,7 +65,7 @@ body {
 .header ul li a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   /* color: black !important; */
 }
 
@@ -82,10 +83,13 @@ body {
 
 .sticky-header {
   /* width: 100%; */
+  height: 65px;
   top: 0;
   position: fixed;
   background-color: white;
   transition: all 0.5s linear;
+  box-shadow: 0px 0px 20px #414142;
+  padding-top: 0;
 }
 
 .sticky-header .header-img .lg-nav {
@@ -146,18 +150,20 @@ body {
 }
 
 .pulse-effect-section h1 {
-  margin-top: 30px;
+  margin-top: 35px;
   font-size: 55px;
+  font-weight: 500;
+  line-height: 62px;
 }
 
 .pulse-effect-section p {
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 15px;
-  opacity: 0.9;
+  font-weight: 100;
 }
 
 .btn-sec {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .btn-sec-1 {
@@ -165,6 +171,7 @@ body {
   background-color: #00bcd4;
   border: none;
   color: white;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -175,7 +182,7 @@ body {
   color: white;
   font-weight: 600;
   margin: 10px;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 /*  side menu section */
@@ -258,15 +265,20 @@ body {
 .brand-contant h6 {
   color: #00bcd4;
   font-size: 16px;
+  font-weight: 500;
 }
 .brand-contant h1 {
   font-size: 48px;
   line-height: 60px;
   margin-top: 10px;
+  font-weight: 600;
 }
 .brand-contant p {
   opacity: 0.7;
+  font-weight: 100;
+  line-height: 25px;
   margin-top: 20px;
+  font-size: 14px;
 }
 
 .progress-bar-sec {
@@ -294,7 +306,7 @@ body {
 }
 
 .progress {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 .progress-per {
   position: relative;
@@ -305,7 +317,7 @@ body {
 }
 
 .brand-contant button {
-  margin-top: 50px;
+  margin-top: 40px;
   max-width: 150px;
   padding: 12px 30px;
   background-color: white;
@@ -323,8 +335,8 @@ body {
 .services-sec {
   width: 100%;
   height: auto;
-  min-height: 700px;
-  padding: 150px;
+  min-height: 600px;
+  padding: 150px 100px;
   background-color: #f8f9fa;
 }
 
@@ -335,9 +347,15 @@ body {
 
 .about-contant h6 {
   font-size: 16px;
+  font-weight: 500;
 }
 .about-contant h1 {
-  font-size: 50px;
+  font-size: 45px;
+}
+.about-contant p {
+  font-size: 15px;
+  font-weight: 100;
+  opacity: 0.6;
 }
 
 .text-color {
@@ -348,7 +366,7 @@ body {
 
 .services-card-sec {
   display: flex;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .service-card {
@@ -361,9 +379,12 @@ body {
 .service-card h6 {
   margin-top: 20px;
   font-size: 16px;
+  font-weight: 500;
 }
 .service-card p {
   margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
 }
 
 .digital-service-section {
@@ -386,11 +407,13 @@ body {
 }
 
 .digital-service p {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .digital-service h1 {
-  font-size: 40px;
+  font-size: 38px;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 .dig-sec-btn {
@@ -400,7 +423,8 @@ body {
   color: white;
   font-weight: 600;
   max-width: 200px;
-  margin-top: 20px;
+  font-size: 15px;
+  margin-top: 25px;
 }
 
 .creative-head-section {
@@ -421,15 +445,20 @@ body {
 .creative-con h6 {
   font-size: 16px;
   opacity: 0.8;
+  font-weight: 500;
 }
 
 .creative-con h1 {
-  font-size: 50px;
+  font-size: 45px;
+  font-weight: 500;
 }
 
 .creative-con p {
-  margin-top: 20px;
-  font-size: 16px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 100;
+  opacity: 0.7;
+  line-height: 25px;
 }
 
 .creative-head-cards-sec {
@@ -470,6 +499,7 @@ body {
 .card-contant p {
   margin-top: 10px;
   opacity: 0.6;
+  font-size: 15px;
 }
 
 .card-social-icon {
@@ -478,7 +508,7 @@ body {
 
 .card-social-icon span {
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   opacity: 0.6;
 }
 
@@ -588,7 +618,7 @@ body {
   margin-top: 100px;
   height: auto;
   min-height: 1300px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 .portfolio-work-sec {
@@ -618,10 +648,12 @@ body {
 }
 
 .project-cont p {
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 100;
+  opacity: 0.7;
 }
 .project-cont h1 {
-  font-size: 70px;
+  font-size: 80px;
   color: #00bcd4;
   margin-left: 10px;
 }
@@ -631,17 +663,18 @@ body {
 }
 
 .btn-wrap button {
-  padding: 12px 35px;
+  padding: 15px 40px;
   background: linear-gradient(to right, #3264f5 18%, #7202bb 82%);
   color: white;
   border: none;
   font-weight: 500;
+  font-size: 15px;
 }
 
 .img-wrap {
   position: relative;
   background-color: white;
-  margin-top: 40px;
+  margin-top: 35px;
   width: 500px;
   height: 534px;
 }
@@ -672,6 +705,14 @@ body {
 .portfolio-card-overlay span {
   font-size: 100px;
 }
+.portfolio-card-overlay h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.portfolio-card-overlay p {
+  font-size: 14px;
+  font-weight: 100;
+}
 
 .img-wrap:hover .portfolio-card-overlay {
   visibility: visible;
@@ -683,17 +724,22 @@ body {
 }
 
 .portfolio-contant h6 {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 500;
   color: #00bcd4;
 }
 
 .portfolio-contant h1 {
-  font-size: 50px;
+  font-size: 45px;
+  font-weight: 600;
   margin-top: 10px;
 }
 
 .portfolio-contant p {
   margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 100;
 }
 
 .img-overflow2 {
@@ -701,7 +747,7 @@ body {
 }
 
 .pricing-sec {
-  padding: 100px;
+  padding: 200px 100px 100px 100px;
 }
 
 .pricing-heading {
@@ -713,29 +759,33 @@ body {
   font-weight: 400;
 }
 .pricing-heading h1 {
-  font-size: 50px;
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 .pricing-heading p {
   margin-top: 10px;
+  font-weight: 100;
   opacity: 0.6;
-  font-size: 16px;
+  line-height: 25px;
+  font-size: 15px;
 }
 
 .pricing-plan-sec {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
 }
 
 .starter-plan-section {
   width: 50%;
-  background-color: #e9edf0;
+  background-color: #f8f9fa;
   border-radius: 10px;
   margin: 10px;
 }
 
 .business-plan-section {
   width: 50%;
-  background-color: #e9edf0;
+  background-color: #f8f9fa;
   border-radius: 10px;
   margin: 10px;
 }
@@ -760,20 +810,30 @@ body {
 .starter-plan-contant p {
   font-size: 14px;
   opacity: 0.8;
+  font-weight: 100;
+  line-height: 25px;
   margin-top: 10px;
 }
 
 .starter-heading {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 300;
   color: #00bcd4;
   margin-top: 20px;
 }
 
-.starter-plan-contant h2 span {
+.starter-heading sup {
   font-size: 20px;
-  bottom: 20;
+}
+
+.starter-plan-contant h2 span {
+  position: relative;
+  left: 8px;
+  font-size: 15px;
+  /* font-size: 18px; */
+  /* bottom: 20; */
   color: black;
+  opacity: 0.8;
 }
 
 .starter-plan-contant ul {
@@ -782,11 +842,25 @@ body {
 
 .starter-plan-contant ul li {
   padding-top: 20px;
+  font-size: 13px;
 }
 
 .starter-plan-contant ul li i {
   padding-right: 20px;
+  /* color: green; */
 }
+
+.starter-plan-contant ul li i.fa-times {
+  color: red;
+}
+.starter-plan-contant ul li i.fa-check {
+  color: green;
+}
+/* 
+.wrong-sign {
+  font-size: 16px;
+  color: red !important;
+} */
 
 .starter-plan-section:hover {
   background-color: #00bcd4;
@@ -831,10 +905,11 @@ body {
   font-size: 14px;
   opacity: 0.8;
   margin-top: 10px;
+  line-height: 25px;
 }
 
 .business-heading {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 300;
   margin-top: 20px;
 }
@@ -849,16 +924,22 @@ body {
   color: black !important;
 }
 
+.business-plan-contant sup {
+  font-size: 20px;
+}
+
 .business-plan-contant ul {
   list-style: none;
 }
 
 .business-plan-contant ul li {
   padding-top: 20px;
+  font-size: 13px;
 }
 
 .business-plan-contant ul li i {
   padding-right: 20px;
+  color: green;
 }
 
 .prc-btn-wrp-b {
@@ -871,7 +952,7 @@ body {
 }
 
 .prc-btn-wrp-b button {
-  padding: 15px 40px;
+  padding: 13px 40px;
   color: white;
   background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
   border: 2px solid transparent;
@@ -888,7 +969,7 @@ body {
 
 .statistic-one {
   width: 50%;
-  background-color: #e9edf0;
+  background-color: #f8f9fa;
   height: auto;
   min-height: 600px;
 }
