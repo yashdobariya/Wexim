@@ -45,7 +45,7 @@
     width: 100%;
   }
   .brand-contant {
-    padding: 20px;
+    padding: 70px 20px;
     text-align: center;
     align-items: center;
   }
@@ -60,7 +60,7 @@
     width: 100%;
   }
   .services-sec {
-    padding: 20px;
+    padding: 50px 20px 60px 20px;
   }
   .about-contant {
     padding: 30px 0px;
@@ -69,14 +69,14 @@
     font-size: 40px;
   }
   .services-card-sec {
-    margin-top: 50px;
+    margin-top: -30px;
     flex-direction: column;
   }
   .service-card {
     margin-top: 50px;
   }
   .creative-main {
-    padding: 20px;
+    padding: 50px 20px 20px 20px;
   }
   .creative-con {
     text-align: center;
@@ -101,7 +101,7 @@
     padding: 20px;
   }
   .creative-portfolio-section {
-    margin-top: 200px;
+    margin-top: 100px;
   }
   .pricing-plan-sec {
     flex-direction: column;
@@ -116,10 +116,22 @@
     padding: 0px;
   }
   .pricing-sec {
-    padding: 20px;
+    padding: 60px 20px;
+  }
+  .pricing-heading h6 {
+    font-size: 15px;
+  }
+  .pricing-heading h1 {
+    font-size: 30px;
   }
   .starter-plan-section {
     margin: 0px;
+  }
+  .starter-plan-contant h1 {
+    font-size: 25px;
+  }
+  .prc-btn-wrp button {
+    padding: 10px 30px;
   }
   .starter-plan-contant {
     padding: 50px 20px;
@@ -128,10 +140,16 @@
   .business-plan-section {
     margin: 20px 0px;
   }
+  .business-plan-contant h1 {
+    font-size: 25px;
+  }
   .business-plan-contant {
     margin: 20px 0px;
     padding: 50px 20px;
     text-align: center;
+  }
+  .prc-btn-wrp-b button {
+    padding: 10px 30px;
   }
   .statistics-section {
     flex-direction: column;
@@ -146,7 +164,7 @@
     margin-left: 77px;
   }
   .statistic-contant {
-    padding: 20px;
+    padding: 0px 20px;
   }
   .mobile-heading-contant {
     padding: 0px;
@@ -155,7 +173,7 @@
     flex-direction: column;
   }
   .mobile-app-sec {
-    padding: 20px;
+    padding: 60px 20px;
   }
   .dream-sectiom {
     flex-direction: column;
@@ -165,6 +183,8 @@
   }
   .dream-img-wrap {
     width: 100%;
+    object-fit: cover;
+    height: 100%;
   }
   .dream-img-wrap img {
     width: 100%;
@@ -180,7 +200,7 @@
     height: 100%;
   }
   .contact-detail-contant {
-    padding: 100px 20px;
+    padding: 70px 20px;
   }
   .contact-form-section {
     width: 100%;
@@ -215,14 +235,87 @@
 }
 
 @media (min-width: 320px) and (max-width: 570px) {
+  .header-img {
+    left: -35px;
+  }
+  .menu-btn {
+    position: relative;
+    right: -35px;
+  }
+  .pulse-effect-section {
+    margin: 70px 0px;
+    padding: 100px 20px;
+  }
+  .pulse-effect-section h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .brand-contant button {
+    padding: 5px 35px;
+  }
+  .digital-service p {
+    line-height: 20px;
+  }
+  .digital-service {
+    padding: 20px;
+  }
+  .digital-service h1 {
+    font-size: 35px;
+  }
+  .dig-sec-btn {
+    padding: 6px 35px;
+  }
+  .project-cont h1 {
+    font-size: 60px;
+  }
+  .project-cont p {
+    font-size: 10px;
+  }
+  .btn-wrap button {
+    padding: 12px 30px;
+  }
+  .statistic-two {
+    min-height: 350px;
+  }
+  .sta-card-con {
+    text-align: center;
+    width: 170px;
+  }
+  .sta-contant {
+    margin-left: -5px;
+  }
+  .mobile-heading-contant h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .mobile-heading-contant p {
+    margin-top: 18px;
+  }
+  .mobile-app-design-section {
+    margin-top: 10px;
+  }
+  .dream-contant h1 {
+    font-size: 35px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  .dream-btn button {
+    padding: 12px 30px;
+  }
   .head-card {
     flex-direction: column;
   }
   .card-img {
     width: 100%;
   }
-  .card-contant {
+  .card-contant-left {
     width: 100%;
+    text-align: center;
+    order: 2;
+  }
+  .card-contant-right {
+    width: 100%;
+    text-align: center;
     order: 2;
   }
   .creative-con h1 {
@@ -253,5 +346,28 @@
   .portfolio-card-overlay {
     width: 250px;
     height: 300px;
+  }
+  .contact-form form {
+    flex-direction: column;
+  }
+  .contact-form input {
+    width: 100%;
+  }
+  .contact-form-section {
+    /* width: 100%; */
+    padding: 20px;
+  }
+  .contact-form textarea {
+    margin-left: 0px;
+  }
+  .contact-detail-contant h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .btn-sec-one {
+    padding: 6px 25px;
+  }
+  .btn-sec-two {
+    padding: 6px 25px;
   }
 }
