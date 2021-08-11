@@ -1,0 +1,48 @@
+.text--black {
+  color: $black !important;
+}
+
+.top-btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #3264f5 18%, #7202bb 82%);
+  border: none;
+  border-radius: 50%;
+  z-index: 10;
+  color: $white;
+  bottom: 20px;
+  display: none;
+  right: 30px;
+}
+
+.top-btn {
+  i {
+    position: relative;
+    font-size: 20px;
+  }
+}
+
+.text-color {
+  background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-color-black {
+  background: $black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: 8px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.b-month {
+  position: relative;
+  left: 8px;
+  font-size: 15px;
+  color: $black;
+  opacity: 0.8;
+}

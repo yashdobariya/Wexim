@@ -1,0 +1,491 @@
+@media (min-width: 995px) and (max-width: 1250px) {
+  .header {
+    padding-left: 0px;
+
+    ul {
+      li {
+        padding: 20px;
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .menu-btn {
+      i {
+        padding: 20px;
+        font-size: 25px;
+      }
+    }
+  }
+  .creative-main {
+    padding: 20px;
+  }
+  .creative-con {
+    text-align: center;
+    padding: 30px 50px;
+  }
+  .creative-portfolio-section {
+    margin-top: 200px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 995px) {
+  .header {
+    padding-left: 0px;
+    ul {
+      display: none;
+    }
+  }
+
+  .pulse-effect-section {
+    margin: 0px;
+    padding: 20px;
+  }
+
+  .brand-section {
+    flex-direction: column;
+
+    .barnd-img-sec {
+      width: 100%;
+    }
+
+    .brand-contant-sec {
+      width: 100%;
+    }
+
+    .brand-contant {
+      padding: 70px 20px;
+      text-align: center;
+      align-items: center;
+      h1 {
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .progress-bar-sec {
+    width: 100%;
+
+    .progress-per {
+      text-align: left;
+    }
+  }
+
+  .services-sec {
+    padding: 50px 20px 60px 20px;
+
+    .about-contant {
+      padding: 30px 0px;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    .services-card-sec {
+      margin-top: -30px;
+      flex-direction: column;
+    }
+    .service-card {
+      margin-top: 50px;
+    }
+  }
+
+  .creative-head-section {
+    .creative-main {
+      padding: 50px 20px 20px 20px;
+      .creative-con {
+        text-align: center;
+        padding: 30px 0px;
+      }
+    }
+  }
+
+  .creative-head-section {
+    .creative-main {
+      .creative-head-cards-sec {
+        .cards-sec {
+          .card-sec-two {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .card-sec-one {
+    display: none;
+  }
+
+  .creative-portfolio-contant-sec {
+    display: none;
+
+    .portfolio-contant {
+      padding: 20px;
+    }
+  }
+
+  .creative-portfolio-section {
+    margin-top: 100px;
+    .portfolio-sec {
+      padding: 20px;
+      .portfolio-work-sec {
+        width: 100%;
+      }
+    }
+  }
+
+  .pricing-sec {
+    padding: 60px 20px;
+
+    .pricing-heading {
+      padding: 0px;
+      h6 {
+        font-size: 15px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .pricing-plan-sec {
+      flex-direction: column;
+
+      .starter-plan-section {
+        width: 100%;
+        margin: 0px;
+
+        .starter-plan-contant {
+          padding: 50px 20px;
+          text-align: center;
+          h1 {
+            font-size: 25px;
+          }
+          .prc-btn-wrp {
+            button {
+              padding: 10px 30px;
+            }
+          }
+        }
+      }
+
+      .business-plan-section {
+        width: 100%;
+        margin: 20px 0px;
+
+        .business-plan-contant {
+          margin: 20px 0px;
+          padding: 50px 20px;
+          text-align: center;
+          h1 {
+            font-size: 25px;
+          }
+          .prc-btn-wrp-b {
+            button {
+              padding: 10px 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .statistics-section {
+    flex-direction: column;
+
+    .statistic-one {
+      width: 100%;
+      .statistic-contant {
+        padding: 0px 20px;
+      }
+    }
+    .statistic-two {
+      width: 100%;
+
+      .sta-contant {
+        margin-left: 77px;
+      }
+    }
+  }
+
+  .mobile-app-sec {
+    padding: 60px 20px;
+    .mobile-heading-contant {
+      padding: 0px;
+    }
+    .mobile-app-design-section {
+      flex-direction: column;
+    }
+  }
+
+  .dream-sectiom {
+    flex-direction: column;
+    .dream-sec {
+      width: 100%;
+    }
+    .dream-img-wrap {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .contact-section {
+    flex-direction: column-reverse;
+
+    .contact-detail-section {
+      width: 100%;
+      height: 100%;
+
+      .contact-detail-contant {
+        padding: 70px 20px;
+
+        .contact-social-icon {
+          span {
+            padding: 5px;
+          }
+        }
+      }
+    }
+
+    .contact-form-section {
+      width: 100%;
+    }
+  }
+
+  .footer-section {
+    padding: 90px 0px;
+    .footer-social-icon {
+      span {
+        padding: 0px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1285px) {
+  .brand-contant {
+    padding: 30px 50px;
+  }
+}
+
+@media (min-width: 995px) and (max-width: 1200px) {
+  .brand-contant {
+    padding: 30px;
+  }
+
+  .portfolio-sec {
+    padding: 10px;
+
+    .portfolio-contant {
+      padding: 20px;
+    }
+  }
+  .mobile-heading-contant {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+  .header-img {
+    left: -35px;
+  }
+  .menu-btn {
+    position: relative;
+    right: -35px;
+  }
+  .pulse-effect-section {
+    margin: 70px 0px;
+    padding: 100px 20px;
+
+    h1 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  .brand-contant {
+    button {
+      padding: 5px 35px;
+    }
+  }
+
+  .digital-service {
+    padding: 20px;
+
+    p {
+      line-height: 20px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+
+    .dig-sec-btn {
+      padding: 6px 35px;
+    }
+  }
+
+  .project-cont {
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+
+  .btn-wrap {
+    button {
+      padding: 12px 30px;
+    }
+  }
+
+  .statistics-section {
+    .statistic-two {
+      min-height: 350px;
+
+      .sta-contant {
+        margin-left: -5px;
+      }
+      .sta-card-con {
+        text-align: center;
+        width: 170px;
+      }
+    }
+  }
+
+  .mobile-app-sec {
+    .mobile-heading-contant {
+      h1 {
+        font-size: 35px;
+        line-height: 45px;
+      }
+
+      p {
+        margin-top: 18px;
+      }
+    }
+  }
+
+  .mobile-app-design-section {
+    margin-top: 10px;
+  }
+
+  .dream-contant {
+    h1 {
+      font-size: 35px;
+      margin-top: 20px;
+      line-height: 40px;
+    }
+  }
+
+  .dream-btn {
+    button {
+      padding: 12px 30px;
+    }
+  }
+
+  .head-card {
+    &:hover {
+      .content-overlay {
+        bottom: 0;
+      }
+    }
+    &:hover {
+      .content-overlay2 {
+        bottom: 0;
+      }
+    }
+    flex-direction: column;
+  }
+
+  .creative-head-section {
+    .creative-main {
+      .creative-head-cards-sec {
+        .cards-sec {
+          .card-contant-left {
+            width: 100%;
+            text-align: center;
+            order: 2;
+          }
+          .card-img {
+            width: 100%;
+          }
+
+          .card-contant-right {
+            width: 100%;
+            text-align: center;
+            order: 2;
+          }
+        }
+      }
+    }
+  }
+
+  .creative-con {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .content-overlay {
+    height: 50%;
+    width: 100%;
+  }
+  .content-overlay2 {
+    height: 50%;
+    width: 100%;
+  }
+
+  .work-contant {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .creative-portfolio-section {
+    .portfolio-sec {
+      .img-wrap {
+        width: 250px;
+        height: 300px;
+      }
+      .portfolio-card-overlay {
+        width: 250px;
+        height: 300px;
+      }
+    }
+  }
+
+  .contact-section {
+    .contact-form-section {
+      padding: 20px;
+
+      .contact-form {
+        form {
+          flex-direction: column;
+        }
+        input {
+          width: 100%;
+        }
+        textarea {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .contact-detail-contant {
+    h1 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+  .btn-sec-one {
+    padding: 6px 25px;
+  }
+  .btn-sec-two {
+    padding: 6px 25px;
+  }
+}
